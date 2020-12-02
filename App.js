@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React,{Component} from 'react';
 import {
   StyleSheet,
   Text,
@@ -8,29 +8,31 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <StatusBar backgroundColor="#1e90ff" barStyle="light-content" />
-      <Text style={styles.welcome}>Login to My App</Text>
-      <TextInput style={styles.input} placeholder="Username" />
-      <TextInput style={styles.input} placeholder="Password" secureTextEntry />
-      <View style={styles.btnContainer}>
-        <TouchableOpacity
-          style={styles.userBtn}
-          onPress={() => alert("Login Works")}
-        >
-          <Text style={styles.btnTxt}>Login</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.userBtn}
-          onPress={() => alert("Login Works")}
-        >
-          <Text style={styles.btnTxt}>Signup</Text>
-        </TouchableOpacity>
+export default class App extends Component {
+  render(){
+      return(
+      <View style={styles.container}>
+        <StatusBar backgroundColor="#1e90ff" barStyle="light-content" />
+        <Text style={styles.welcome}>Login to My App</Text>
+        <TextInput style={styles.input} placeholder="Username" />
+        <TextInput style={styles.input} placeholder="Password" secureTextEntry />
+        <View style={styles.btnContainer}>
+          <TouchableOpacity
+            style={styles.userBtn}
+            onPress={() => alert("Login Works")}
+          >
+            <Text style={styles.btnTxt}>Login</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.userBtn}
+            onPress={() => alert("Login Works")}
+          >
+            <Text style={styles.btnTxt}>Signup</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
-  );
+    );
+  }
 }
 
 const styles = StyleSheet.create({
