@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "719753518074",
+    "project_id": "evenbeams",
+    "storage_bucket": "evenbeams.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719753518074:android:fb7dfe2748e6b69bdb6243",
+        "android_client_info": {
+          "package_name": "com.ssi.eventbeams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719753518074-pm260nc562j7m3557gdbrp6cke90gad6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwSRYRTQDyATqLgCgX46bIXqQJVwU3qok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719753518074-pm260nc562j7m3557gdbrp6cke90gad6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
