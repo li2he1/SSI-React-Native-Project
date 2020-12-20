@@ -1,6 +1,3 @@
-// import React from "react";
-// import { View, Text, Button } from "react-native";
-
 import React, {useContext, useState} from 'react';
 import {
   View,
@@ -15,18 +12,16 @@ import FormInput from '../components/FormInput';
 import FormButton from '../components/FormButton';
 import SocialButton from '../components/SocialButton';
 
-
+import {AuthContext} from '../navigation/AuthProvider';
 
 const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
+  const {login} = useContext(AuthContext);
+
   return (
-    // <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-    //   <Text>Login Screen</Text>
-    //   <Button title="Click Here" onPress={() => alert("Button Click")} />
-    // </View>
-      <View style={styles.container}>
+    <View style={styles.container}>
       <Image 
         source={require('../assets/rn-social-logo.png')}
         style={styles.logo}
@@ -79,7 +74,7 @@ const LoginScreen = ({navigation}) => {
 
       <TouchableOpacity
         style={styles.forgotButton}
-      >
+        onPress={() => navigation.navigate('Signup')}>
         <Text style={styles.navButtonText}>
           Don't have an acount? Create here
         </Text>
